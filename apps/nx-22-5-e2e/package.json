@@ -1,0 +1,26 @@
+{
+  "name": "@nx-22-5/nx-22-5-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@nx-22-5/nx-22-5"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/nx-22-5-e2e/jest.config.cts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@nx-22-5/nx-22-5:build",
+          "@nx-22-5/nx-22-5:serve"
+        ]
+      }
+    }
+  }
+}
