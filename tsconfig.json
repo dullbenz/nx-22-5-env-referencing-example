@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/nx-22-5"
+    },
+    {
+      "path": "./libs/test"
     }
   ]
 }

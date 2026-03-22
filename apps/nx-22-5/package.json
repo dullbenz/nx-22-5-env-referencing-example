@@ -85,6 +85,13 @@
           "build",
           "prune"
         ]
+      },
+      "test-env-referencing": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "node scripts/test-env-referencing.js",
+          "cwd": "{projectRoot}"
+        }
       }
     }
   },
